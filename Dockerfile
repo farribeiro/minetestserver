@@ -1,5 +1,5 @@
 # Build stage
-FROM debian:bookworm-slim AS builder
+FROM debian:bookworm AS builder
 
 # Build-time arguments
 ARG MINETEST_VERSION=master
