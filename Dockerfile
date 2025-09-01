@@ -1,5 +1,5 @@
 # Build stage
-FROM debian:bookworm-slim AS builder
+FROM debian:trixie-slim AS builder
 
 # Build-time arguments - defaults to dev build of more recent version
 ARG LUANTI_VERSION=master
