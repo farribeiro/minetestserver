@@ -75,7 +75,7 @@ RUN cmake -G Ninja /usr/src/minetest \
     ninja install
 
 # Bundle only the runtime dependencies
-FROM debian:bookworm-slim AS runtime
+FROM debian:trixie-slim AS runtime
 RUN apt-get update &&\
     apt-get install libcurl3-gnutls libgcc-s1 libgmp10 libjsoncpp25 \
         libleveldb1d libncursesw6 libpq5 \
